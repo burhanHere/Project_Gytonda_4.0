@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifz;
+            background-color: rgb(24, 24, 24);
+            color: white;
+        }
+
+        .div_header {
+            background-color: #ffffffde;
+            height: 60px;
+            padding-top: 3%;
+            /* padding-right: 2%;
+            padding-left: 2%; */
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: -8px;
+            border-radius: 0px 0px 5px 5px;
+        }
+
+        .ul_nev {
+            /* border-radius: 5px; */
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 54px;
+            overflow: hidden;
+            background-color: rgba(51, 51, 51, 0.753);
+        }
+
+        .li_float_left {
+            float: left;
+            /* margin-left: 150px; */
+        }
+
+        .li_flote_right {
+            float: right;
+        }
+
+        .li_a_nev {
+            font-size: 19px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifz;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .li_a_nev:hover {
+            /* background-color: #111; */
+            background-color: #4CAF50;
+            transition: 0.25s;
+        }
+
+        .div_Broz_Before_Hoes {
+            display: flex;
+            align-items: center;
+            background-color: rgba(51, 51, 51, 0.753);
+            margin-top: 2%;
+            border-radius: 55px;
+            margin-left: 25%;
+            /* margin-right: 20%; */
+            background-image: url("IMG_20201007_180651_182.jpg5.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 360px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .div_Broz_Before_Hoes:hover {
+            background-image: url('Snapchat-1521799419.jpg');
+            transition: 0.25s;
+        }
+
+        .h1_Broz_Before_Hoes {
+            margin-top: 20%;
+            font-family: cursive;
+            text-align: center;
+            font-size: 200%;
+            color: rgb(33, 221, 64);
+            opacity: 75%;
+        }
+
+        .div_for_form_button {
+            display: flex;
+            align-items: center;
+            margin-top: 2%;
+            background-color: rgba(51, 51, 51, 0.753);
+            padding-bottom: 2%;
+            padding-top: 2%;
+            margin-left: 5%;
+            margin-right: 5%;
+            border-radius: 10px 10px 10px 10px;
+            justify-content: space-around;
+        }
+
+        .button_for_fiverr {
+            height: 70px;
+            width: auto;
+            padding-top: 1%;
+            padding-left: 6%;
+            padding-right: 6%;
+            border-radius: 55px;
+            border: 5px solid rgb(16, 224, 16);
+            padding-bottom: 1%;
+            text-align: center;
+            font-size: auto;
+            background-color: #50ac5381;
+            color: #000;
+        }
+
+        .button_for_fiverr:hover {
+            transition: 0.25s;
+            border: 5px solid#50ac5381;
+            background-color: rgb(16, 224, 16);
+        }
+
+        .button_for_twitter {
+            height: 70px;
+            width: auto;
+            padding-top: 1%;
+            padding-left: 6%;
+            padding-right: 6%;
+            border-radius: 55px;
+            border: 5px solid #104264;
+            padding-bottom: 1%;
+            text-align: center;
+            font-size: auto;
+            background-color: #3498db;
+            color: #000;
+        }
+
+        .button_for_twitter:hover {
+            transition: 0.25s;
+            border: 5px solid #3498db;
+            background-color: #3498db50;
+        }
+
+        .button_for_facebook {
+            height: 70px;
+            width: auto;
+            padding-top: 1%;
+            padding-left: 6%;
+            padding-right: 6%;
+            border-radius: 55px;
+            border: 5px solid #3498db;
+            padding-bottom: 1%;
+            text-align: center;
+            font-size: auto;
+            background-color: #104264;
+            color: #000;
+        }
+
+        .button_for_facebook:hover {
+            transition: 0.25s;
+            border: 5px solid #104264;
+            background-color: #3498db;
+        }
+
+        .button_for_instagram {
+            height: 70px;
+            width: auto;
+            padding-top: 1%;
+            padding-left: 6%;
+            padding-right: 6%;
+            border-radius: 55px;
+            border: 5px solid rgb(243, 104, 224);
+            padding-bottom: 1%;
+            text-align: center;
+            font-size: auto;
+            background-color: rgb(255, 159, 243);
+            color: #000;
+        }
+
+        .button_for_instagram:hover {
+            transition: 0.25s;
+            border: 5px solid rgb(255, 159, 243);
+            background-color: rgb(243, 104, 224);
+        }
+
+        .button_for_youtube_channel {
+            height: 70px;
+            width: auto;
+            padding-top: 1%;
+            padding-left: 6%;
+            padding-right: 6%;
+            border-radius: 55px;
+            border: 5px solid rgb(200, 214, 229);
+            padding-bottom: 1%;
+            text-align: center;
+            font-size: auto;
+            background-color: rgb(238, 82, 83);
+            color: #000;
+        }
+
+        .button_for_youtube_channel:hover {
+            transition: 0.25s;
+            border: 5px solid rgb(238, 82, 83);
+            background-color: rgb(200, 214, 229);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div_header">
+        <ul class="ul_nev">
+            <li class="li_float_left"><a class="li_a_nev" href="index.html"><b>Home</b></a></li>
+            <li class="li_flote_right"><a class="li_a_nev" target="_blank"
+                    href="https://www.youtube.com/channel/UCGmQKXMj6E03aSzp3LKlM4Q"><b>YouTube
+                        Channel</b></a></li>
+            <li class="li_flote_right">
+                <a class="li_a_nev" target="_blank" href="https://www.instagram.com/_burhan.here_/"><b>Instagram</b></a>
+            </li>
+            <li class="li_flote_right"><a class="li_a_nev" target="_blank"
+                    href="https://www.facebook.com/burhanburewala"><b>Facebook</b></a></li>
+            <li class="li_flote_right"><a class="li_a_nev" target="_blank"
+                    href="https://twitter.com/burhan_here"><b>Twitter</b></a>
+            </li>
+            <li class="li_flote_right"><a class="li_a_nev" target="_blank"
+                    href="https://www.fiverr.com/share/yEZW6e"><b>Fiverr</b></a>
+            </li>
+        </ul>
+    </div>
+    <div class="div_Broz_Before_Hoes">
+        <H1 class="h1_Broz_Before_Hoes">Hover on the buttons below to see the effect and click if want to go to the
+            target website.</H1>
+    </div>
+
+    <div class="div_for_form_button">
+        <form method="get" action="https://www.fiverr.com/share/yEZW6e">
+            <button class="button_for_fiverr" type="submit">Fiverr</button>
+        </form>
+        <form method="get" action="https://twitter.com/burhan_here">
+            <button class="button_for_twitter" type="submit">Twitter</button>
+        </form>
+        <form method="get" action="https://www.fiverr.com/share/yEZW6e">
+            <button class="button_for_facebook" type="submit">Facebook</button>
+        </form>
+        <form method="get" action="https://www.fiverr.com/share/yEZW6e">
+            <button class="button_for_instagram" type="submit">Instagram</button>
+        </form>
+        <form method="get" action="https://www.fiverr.com/share/yEZW6e">
+            <button class="button_for_youtube_channel" type="submit">YouTube Channel</button>
+        </form>
+    </div>
+</body>
+
+</html>
